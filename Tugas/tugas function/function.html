@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function PersegiPanjang(panjang, lebar){
+            var luaspanjang = panjang*lebar;
+            return luaspanjang;
+        }
+        
+        function persegi(sisiA,sisiB){
+            var luaspersegi = sisiA*sisiB;
+            return luaspersegi; 
+        }
+
+        function segitiga(alas,tinggi){
+            var luassegitiga = 0.5*alas*tinggi;
+            return luassegitiga;
+        }
+
+        var pilih = prompt ('bangun datar :PersegiPanjang, persegi, segitiga');
+        if (pilih == 'PersegiPanjang'){
+            var panjang = prompt('masukan panjang')
+            var lebar = prompt('masukan lebar')
+            var hasil = panjang*lebar
+            document.write('<b>PersegiPanjang<b/> <br>')
+            document.write('panjang:', panjang, "<br>")
+            document.write('lebar:', lebar, "<br>")
+            document.write('hasil menghitung panjang*lebar:', hasil)
+        } else if (pilih == 'persegi'){
+            var sisiA = prompt('masukan sisiA')
+            var sisiB = prompt('masukan sisiB')
+            var hasil = sisiA*sisiB
+            document.write('<b>Persegi<b/> <br>')
+            document.write('sisiA:', sisiA, "<br>")
+            document.write('sisiB:', sisiB, "<br>")
+            document.write('hasil menghitung sisiA*sisiB:', hasil)
+        } else if (pilih == 'segitiga'){
+            var setengah = 0.5
+            var alas = prompt('masukan alas')
+            var tinggi = prompt('masukan tinggi')
+            var hasil = setengah*alas*tinggi
+            document.write('<b>segitiga<b/> <br>')
+            document.write('setengah:', setengah, "<br>")
+            document.write('alas:', alas, "<br>")
+            document.write('tinggi:', tinggi, "<br>")
+            document.write('hasil menghitung luas segitiga:', hasil)
+        }
+    </script>
+</body>
+</html>
